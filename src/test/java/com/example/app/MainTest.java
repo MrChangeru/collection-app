@@ -25,7 +25,7 @@ class MainTest {
         assertTrue(young.stream().allMatch(p -> p.getAge() < 30));
 
         // Тест сортировки
-        List<Main.Person> sorted = CollectionUtils.sort(people, Comparatorgit .comparing(Main.Person::getName));
+        List<Main.Person> sorted = CollectionUtils.sort(people, Comparator.comparing(Main.Person::getName));
         assertEquals("Alice", sorted.get(0).getName());
         assertEquals("Bob", sorted.get(1).getName());
         assertEquals("Charlie", sorted.get(2).getName());
